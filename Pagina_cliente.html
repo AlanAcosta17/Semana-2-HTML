@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Práctica 1 LaunchX</title>
+    <style>    </style>
+    <link rel="stylesheet" href="">
+    <script></script>
+</head>
+<body>
+    <table>
+        <tr>
+            <th><img src="C:\Users\alanr\OneDrive\Documentos\ALAN\LAUNCH X\FRONTEND\HTML\Práctica\Imagenes\logo.png" alt="Logotipo" width="400px" height="231px"></th>
+
+        </tr>
+        <tr>
+            <td><h1>Bienvenido a iPastel</h1></td>
+        </tr>
+        <tr>
+            <td><h3>Tu pastelería en línea</h3></td>
+        </tr>
+    </table>
+
+    <p>En nuestra pastelería en línea nos esforzamos para que puedas tener tu pedido de la manera más fácil y rápida posible. Priorizamos el sabor y la eficiencia en cada uno de nuestros productos. Sientase con la confianza de seleccionar las opciones que le agraden más.</p>
+    <br>
+    <h3>Seleccione entre los sabores de pan que tenemos disponibles:</h2><br>
+    <input type="checkbox" id="sabor1" name="sabor1" value="Vainilla">
+    <label for="sabor1">Vainilla ............................ $70</label><br>
+    <input type="checkbox" id="sabor2" name="sabor2" value="Chocolate">
+    <label for="sabor2">Chocolate ........................... $70</label><br>
+    <input type="checkbox" id="sabor3" name="sabor3" value="Velvet">
+    <label for="sabor3">Velvet (rojo) ....................... $85</label><br>
+    <input type="checkbox" id="sabor4" name="sabor4" value="Leches">
+    <label for="sabor4">3 leches ............................ $100</label><br>    
+    <br>
+    <h3>Los siguientes son los adornos que puede ordenar para su pastel:</h5>
+    <br>
+    <table>
+        <tr>
+            <th>Sabores</th>
+        </tr>
+        <tr>
+            <td><img src="https://th.bing.com/th/id/OIP.TpyM7YIlSz4HWLePYU-oSwHaHa?pid=ImgDet&rs=1" alt="Sencillo" width="100" height="100"></td>
+            <td><img src="https://th.bing.com/th/id/R.ee8082a64027efe2caaec02df7f71efb?rik=nYs%2bcubjkCMh7Q&pid=ImgRaw&r=0" alt="Chocolatoso" width="100"></td>
+            <td><img src="https://th.bing.com/th/id/R.5e3b4bf3b805d82e2580432e19567c7e?rik=7W7VwP7f87NJNA&riu=http%3a%2f%2fwww.trajeria.es%2fwp-content%2fuploads%2f2015%2f11%2fpastel-bodas-naked-cake-de-bizcocho-de-vainilla-relleno-de-crema-de-queso-y-frutos-rojos.jpg&ehk=k7uLp8wKsq0z%2biHLDedXVgnIZoYYxXYQ6mhhEzQZM4Q%3d&risl=&pid=ImgRaw&r=0" alt="Especial" width="100"></td>
+        </tr>
+        <tr>
+            <td>$100</td>
+            <td>$150</td>
+            <td>$200</td>
+        </tr>
+        <tr>
+            <td><input type="checkbox" id="adorno1" name="adorno1" value="adorno1"></td>
+            <td><input type="checkbox" id="adorno2" name="adorno2" value="adorno2"></td>
+            <td><input type="checkbox" id="adorno3" name="adorno3" value="adorno3"></td>
+        </tr>
+    </table>
+    <br><br>
+    <h3>Para completar su pedido, por favor ingrese los datos necesitados.</h3><br>
+    <form action="/accion.js" id="form1" method="post">
+    <label for="nombre">Nombre:</label><br>
+    <input type="text" id="nombre" name="nombre"><br><br>
+    <label for="apellido">Apellido:</label><br>
+    <input type="text" id="apellido" name="apellido" form="form1"><br><br>
+    <label for="tel1">Teléfono:</label><br>
+    <input type="tel" id="tel1" name="tel1" maxlength="10"><br><br>
+    <label for="correo1">Correo electrónico:</label><br>
+    <input type="email" id="correo1" name="correo1"><br><br>
+    <label for="descripcion1"> Descripción general del pastel:</label><br>
+    <input type="text" id="descripcion1" name="descripcion1" maxlength="150"><br><br>
+    <table>
+        <tr>
+            <td>
+                <input type="checkbox" id="sabor1" name="sabor1" value="Vainilla">
+                <label for="sabor1">Vainilla</label><br>
+                <input type="checkbox" id="sabor2" name="sabor2" value="Chocolate">
+                <label for="sabor2">Chocolate</label><br>
+                <input type="checkbox" id="sabor3" name="sabor3" value="Velvet">
+                <label for="sabor3">Velvet (rojo)</label><br>
+                <input type="checkbox" id="sabor4" name="sabor4" value="Leches">
+                <label for="sabor4">3 leches</label><br>
+            </td>
+            <td>
+                <input type="checkbox" id="adorno1" name="adorno1" value="adorno1">
+                <label for="Adorno1">Adorno 1</label><br>
+                <input type="checkbox" id="adorno2" name="adorno2" value="adorno2">
+                <label for="Adorno2">Adorno 2</label><br>
+                <input type="checkbox" id="adorno3" name="adorno3" value="adorno3">
+                <label for="Adorno3">Adorno 3</label><br>
+            </td>
+        </tr>
+    </table><br><br>
+    <input type="submit" value="Submit">
+    <input type="reset">
+    </form>
+<br>
+
+<table>
+    <tr>
+        <td>
+            Ubicación: Calle Cristobal Colón #1234, Col. Américas, Monterrey, N. L. <br>
+            Teléfono: 1234567899
+        </td><td></td>
+        <td>
+            <dl>
+                <dt>Horario</dt>
+                <dd>- Lunes a Viernes - 8:00 a 19:00</dd>
+                <dd>- Sábado a Domingo - 8:00 a 13:00</dd>
+            </dl>
+        </td>
+    </tr>
+</table>
+
+ </body>
+</html>
